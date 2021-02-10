@@ -13,13 +13,14 @@ body {
 }
 
 header {
-	position: absolute;
-	top: 0;
+	position: fixed;
 	display: block;
 	width: 100%;
 	padding: 10px;
 	background-color: rgb(96, 117, 136);
 	box-shadow: 0 1px 5px rgb(126, 126, 126);
+	z-index: 1;
+	background-image: linear-gradient(rgb(96, 117, 136), rgb(132, 168, 201));
 }
 
 header h1 {
@@ -28,18 +29,26 @@ header h1 {
 	font-size: 40px;
 	font-weight: 700;
 	letter-spacing: 4pt;
-	color: #c1f0ff;
+	color: #131414;
 }
 
 header nav {
 	display: block;
 	float: right;
-	color: #c1f0ff;
-	font-size: 20px;
 }
 header nav ul {
 	display: block;
 	padding: 4px;
+}
+header nav ul a {
+	text-decoration: none;
+	color: #131414;
+	font-size: 20px;
+}
+header nav ul a:hover {
+	text-decoration: underline;
+	color: #247474;
+	font-size: 20px;
 }
 
 main {
@@ -48,6 +57,10 @@ main {
 	position: absolute;
 	padding-top: 100px;
 	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	background-image: url("../images/mountains-background-vector-5251973.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
 }
 
 .about-section {
@@ -142,26 +155,68 @@ main {
 .app-section {
 	display: block;
 	position: relative;
-	background-color: #7a7a7a;
+	background-color: #dddddd;
+}
+
+#section-title {
+	position: absolute;
+	padding: 2px;
+	background-color: rgb(207, 207, 207);
+	width: 25%;
+	margin-left: 56%;
+	margin-top: -20px;
+	font-size: 40px;
+	text-align: center;
+	padding: 5px;
+	border-radius: 10px;
+	color: rgb(112, 112, 112);
+	box-shadow: 0 2px 5px black;
 }
 
 .flex-row {
 	display: flex;
-	flex: 1 0 25%;
+	flex: 1 1 33%;
 	flex-direction: row;
-	justify-content: center;
+	justify-content: space-around;
 	align-items: center;
+	padding: 25px;
 }
 
 .app-card {
-	display: flex;
-	margin: 5%;
-	background-color: red;
+	height: 100%;
+	margin: 1%;
+	background-color: rgb(171, 215, 226);
+	border-radius: 5px;
+}
+
+.app-card #first {
+	flex-grow: 3;
+}
+
+.app-card #other {
+	flex-grow: 1;
 }
 
 .app-card img {
-	width: 200px;
+	width: 90%;
+	margin: 5%;
+	box-shadow: 0 2px 5px black;
 }
+
+#app-title {
+	padding: 2px;
+	background-color: rgb(236, 146, 146);
+	width: 70%;
+	margin-left: 15%;
+	margin-top: -20px;
+	font-size: 30px;
+	text-align: center;
+	padding: 5px;
+	border-radius: 10px;
+	color: rgb(0, 0, 0);
+	box-shadow: 0 2px 5px black;
+}
+
 .contact-section {
 	display: block;
 

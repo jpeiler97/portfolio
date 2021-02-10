@@ -15,20 +15,21 @@
         <h1>JP Eiler</h1>
         <nav>
             <ul>
-                About Me
+                <a href="#about-section">About Me</a>
             </ul>
             <ul>
-                My Works
+                <a href="#app-section">My Works</a>
+                
             </ul>
             <ul>
-                Contact
+                <a href="#">Contact</a>
             </ul>
         </nav>
     </header>
     
 
     <!-- Main -->
-    <main>
+    <main id= "about-section">
 
         <!-- About Myself -->
         <section class= "about-section">
@@ -54,17 +55,28 @@
         <div class= "clearfix"></div>
 
         <!-- App Showcase, 4 divs, 1st div larger than other 3 -->
-        <section class = "app-section">
+        <section class = "app-section" id= "app-section">
+            <div id= "section-title">What have I made?</div>
             <section class = "flex-row">
-                <div class = "app-card"style= "flex-grow: 2">Stuff
+                <div class = "app-card" id="first">
+                    <div id= "app-title">Horiseon Code Refactor</div>
+                    
                     <img src= "./assets/images/horeiseonThumbnail.png">
-                </div>
-                <div class = "app-card" style= "flex-grow: 1">
+                    
                     Stuff
-                    <img src="./assets/images/blockBreakThumbnail.png" alt= "Block Breaker">
                 </div>
-                <div class = "app-card" style= "flex-grow: 1">Stuff</div>
-                <div class = "app-card" style= "flex-grow: 1">Stuff</div>
+                <div class = "app-card" id="other">
+                    <div id= "app-title">Block Breaker</div>
+                    <img src="./assets/images/blockBreakThumbnail.png" alt= "Block Breaker">
+
+                    stuff
+                </div>
+                <div class = "app-card" id="other">
+                    <img src="./assets/images/placeholder.png">
+                </div>
+                <div class = "app-card" id="other">
+                    <img src="./assets/images/placeholder.png">
+                </div>
             </section>
         </section>
         <!-- Contact Me -->
