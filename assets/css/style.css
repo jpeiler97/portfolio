@@ -1,0 +1,188 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+header {
+	position: absolute;
+	top: 0;
+	display: block;
+	width: 100%;
+	padding: 10px;
+	background-color: rgb(96, 117, 136);
+	box-shadow: 0 1px 5px rgb(126, 126, 126);
+}
+
+header h1 {
+	float: left;
+	padding: 20px;
+	font-size: 40px;
+	font-weight: 700;
+	letter-spacing: 4pt;
+	color: #c1f0ff;
+}
+
+header nav {
+	display: block;
+	float: right;
+	color: #c1f0ff;
+	font-size: 20px;
+}
+header nav ul {
+	display: block;
+	padding: 4px;
+}
+
+main {
+	width: 100%;
+	display: block;
+	position: absolute;
+	padding-top: 100px;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.about-section {
+	position: relative;
+	display: block;
+	float: left;
+	background-color: rgb(171, 215, 226);
+	width: 90%;
+	margin: 5%;
+	border-radius: 25px;
+}
+
+#about-title {
+	padding: 2px;
+	background-color: rgb(207, 207, 207);
+	width: 40%;
+	margin-left: 50%;
+	margin-top: -10px;
+	font-size: 40px;
+	text-align: center;
+	padding: 5px;
+	border-radius: 10px;
+	color: rgb(112, 112, 112);
+	box-shadow: 0 2px 5px black;
+}
+
+.about-me {
+	display: flex;
+	/* position: relative; */
+	flex-direction: column;
+	float: right;
+	width: 60%;
+	height: 100%;
+	margin: 5px 20px 20px 20px;
+	flex: 1 0 30%;
+	padding: 20px;
+}
+
+.about-me h3 {
+	/* position: relative; */
+	font-size: 30px;
+	padding: 10px;
+	text-align: right;
+}
+
+.about-me hr {
+	display: inline-block;
+
+	height: 1px;
+	border: 0;
+	border-top: 1px solid rgb(0, 0, 0);
+	margin: 1em 0;
+	padding: 0;
+}
+.about-div {
+	/* position: relative; */
+	display: flexbox;
+
+	margin-bottom: 20px;
+	padding: 15px;
+	background-color: rgba(131, 131, 131, 0.178);
+	border-radius: 10px;
+}
+
+.my-photo {
+	/* position: relative; */
+	display: block;
+	float: left;
+	width: 30%;
+	height: 100%;
+	margin: 20px 20px 20px 60px;
+	padding: 25px;
+	border-radius: 25px;
+	box-shadow: 0 2px 5px black;
+	background-image: linear-gradient(rgba(141, 141, 141, 0.363), rgba(255, 255, 255, 0.685));
+}
+
+.my-photo hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid rgb(0, 0, 0);
+	margin: 1em 0;
+	padding: 0;
+}
+.my-photo img {
+	position: relative;
+	border-radius: 10px;
+	width: 100%;
+}
+
+.app-section {
+	display: block;
+	position: relative;
+	background-color: #7a7a7a;
+}
+
+.flex-row {
+	display: flex;
+	flex: 1 0 25%;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.app-card {
+	display: flex;
+	margin: 5%;
+	background-color: red;
+}
+
+.app-card img {
+	width: 200px;
+}
+.contact-section {
+	display: block;
+
+	background-color: greenyellow;
+}
+
+@media screen and (max-width: 888px) {
+	.about-me {
+		width: 90%;
+		float: unset;
+		padding: 0;
+		margin: 5%;
+	}
+
+	.about-div {
+		font-size: 14px;
+	}
+
+	.my-photo {
+		width: 50%;
+		margin-left: 25%;
+		font-size: 15px;
+	}
+}
