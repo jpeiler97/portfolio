@@ -1,3 +1,12 @@
+@keyframes grow {
+	from {
+		transform: scale(1);
+	}
+	to {
+		transform: scale(1.1);
+	}
+}
+
 * {
 	box-sizing: border-box;
 }
@@ -184,10 +193,29 @@ main {
 
 .app-card {
 	display: flexbox;
-	margin: 1%;
-	background-image: linear-gradient(rgba(141, 141, 141), rgba(255, 255, 255));
+	margin: 2%;
+	transition: all 1s ease;
+	padding: 2%;
+	background-image: linear-gradient(rgb(141, 141, 141), rgb(255, 255, 255));
 	border-radius: 25px;
 	box-shadow: 0 2px 5px black;
+}
+
+#app-tag {
+	position: relative;
+	display: inline-block;
+	color: rgb(85, 85, 85);
+	font-size: 1.5rem;
+	width: 100%;
+	text-align: center;
+	margin-top: 5%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 2%;
+	background-image: linear-gradient(#d2fcffd7, #9be7ecbe);
+	border-radius: 100px;
+	box-shadow: 0 1px 2px #fff, 0 -1px 1px #666, inset 0 -1px 1px rgba(0, 0, 0, 0.5),
+		inset 0 1px 1px rgba(255, 255, 255, 0.8);
 }
 
 #first {
@@ -199,11 +227,18 @@ main {
 }
 
 .app-card img {
-	display: block;
-	width: 95%;
-	margin: 2.5%;
+	display: inline-block;
+	width: 100%;
 	border-radius: 25px;
 	box-shadow: 0 2px 5px black;
+	transform: scale(1);
+	transition: all 0.7s ease;
+	opacity: 0.7;
+}
+
+.app-card img:hover {
+	opacity: 1;
+	transform: scale(1.05);
 }
 
 .app-card h3 {
@@ -211,23 +246,14 @@ main {
 	font-size: 15px;
 }
 
-#app-title {
-	padding: 2px;
-	background-color: rgb(236, 146, 146);
-	width: 100%;
-	margin-top: -20px;
-	font-size: 30px;
-	text-align: center;
-	padding: 5px;
-	border-radius: 10px;
-	color: rgb(0, 0, 0);
-	box-shadow: 0 2px 5px black;
-}
-
 .contact-section {
 	display: block;
+}
 
-	background-color: greenyellow;
+.contact-row {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
 }
 
 @media screen and (max-width: 888px) {
