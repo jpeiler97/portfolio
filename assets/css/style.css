@@ -17,7 +17,7 @@ h3 {
 	font-size: 40px;
 	border-radius: 10px;
 	box-shadow: 0 2px 5px black;
-	padding: 5px;
+	padding: 10px;
 }
 
 .clearfix::after {
@@ -28,7 +28,11 @@ h3 {
 
 header {
 	position: fixed;
-	display: block;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
 	width: 100%;
 	padding: 10px;
 	box-shadow: 0 1px 5px rgb(126, 126, 126);
@@ -37,31 +41,34 @@ header {
 }
 
 header h1 {
-	float: left;
+	display: flex;
 	padding: 20px;
 	font-size: 40px;
 	font-weight: 700;
-	letter-spacing: 4pt;
+	letter-spacing: 2pt;
 	color: #131414;
+	flex: 1 0 auto;
 }
 
 header nav {
-	display: block;
-	float: right;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	flex: 2 0 auto;
 }
 header nav ul {
-	display: block;
+	display: flex;
 	padding: 4px;
 }
 header nav ul a {
 	text-decoration: none;
 	color: #131414;
-	font-size: 20px;
+	font-size: 30px;
 }
 header nav ul a:hover {
 	text-decoration: underline;
 	color: #247474;
-	font-size: 20px;
 }
 
 main {
@@ -176,7 +183,6 @@ main {
 
 #section-title {
 	position: relative;
-	padding: 2px;
 	width: 35%;
 	margin-left: auto;
 	margin-right: auto;
@@ -213,7 +219,7 @@ main {
 	margin-top: 5%;
 	margin-left: auto;
 	margin-right: auto;
-	padding: 2%;
+	padding: 10px;
 	background-image: linear-gradient(#d2fcffd7, #9be7ecbe);
 	border-radius: 100px;
 	box-shadow: 0 1px 2px #fff, 0 -1px 1px #666, inset 0 -1px 1px rgba(0, 0, 0, 0.5),
@@ -277,6 +283,8 @@ main {
 
 .link-div {
 	border-radius: 100px;
+	display: flex;
+	flex-direction: row;
 	margin: 20px;
 	transform: scale(1);
 	transition: all 0.75s ease;
@@ -291,6 +299,7 @@ main {
 	float: left;
 	height: 50px;
 	padding: 5px;
+	flex-basis: 50px;
 }
 
 .link-div h3 {
@@ -301,9 +310,11 @@ main {
 	height: 100%;
 	align-items: center;
 	justify-content: center;
+	flex: auto;
 }
 
 .link-div h3 a {
+	font-size: 1rem;
 	text-decoration: none;
 	color: white;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -342,6 +353,12 @@ footer p {
 		flex-direction: column;
 		justify-content: ;
 	}
+
+	#about-title,
+	#section-title {
+		width: 50%;
+	}
+
 	.my-photo {
 		margin-left: auto;
 		margin-right: auto;
@@ -351,30 +368,55 @@ footer p {
 	.contact-row {
 		flex-direction: column;
 		justify-content: center;
+		align-items: center;
 		margin-left: auto;
 		margin-right: auto;
-		width: 45%;
+		width: 50%;
 	}
 
-	.link-div h3 {
-		display: block;
-		padding-top: 12px;
-		padding-left: 0;
-		padding-right: 0;
-		position: relative;
-		margin-right: 20px;
-		margin-left: auto;
-		text-align: center;
-	}
-
-	#gmail h3 {
-		padding-top: 15px;
-		font-size: 14px;
+	.link-div {
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 }
 @media screen and (max-width: 768px) {
+	header nav ul a {
+		font-size: 25px;
+	}
+
 	#first {
-		flex: 1 0 100%;
-		width: 50%;
+		flex: 1;
+	}
+
+	#about-title,
+	#section-title {
+		width: 60%;
+		font-size: 30px;
+	}
+	main {
+		padding-top: 137px;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	header {
+		flex-direction: column;
+	}
+
+	header nav {
+		justify-content: space-evenly;
+	}
+
+	header nav ul a {
+		font-size: 20px;
+	}
+
+	.my-photo {
+		width: 70%;
+	}
+
+	.contact-row {
+		width: 75%;
 	}
 }
