@@ -248,6 +248,26 @@ main {
 		inset 0 1px 1px rgba(255, 255, 255, 0.8);
 }
 
+#repo-link {
+	position: relative;
+	display: inline-block;
+	font-size: 1.5rem;
+	width: 74%;
+	text-align: center;
+	margin-top: 5%;
+	margin-left: 13%;
+	margin-right: 13%;
+	padding: 10px;
+	background-image: linear-gradient(#d49686be, #e76747be);
+	border-radius: 100px;
+	box-shadow: 0 1px 2px #fff, 0 -1px 1px #666, inset 0 -1px 1px rgba(0, 0, 0, 0.5),
+		inset 0 1px 1px rgba(255, 255, 255, 0.8);
+}
+
+#repo-link a {
+	text-decoration: none;
+	color: rgb(85, 85, 85);
+}
 #first {
 	flex: 1.5;
 }
@@ -405,7 +425,8 @@ footer p {
 	}
 }
 @media screen and (max-width: 768px) {
-	#app-tag {
+	#app-tag,
+	#repo-link {
 		font-size: 1rem;
 	}
 
