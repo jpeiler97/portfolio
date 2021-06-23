@@ -8,8 +8,8 @@ import ProjectPage from './components/pages/ProjectPage';
 function App() {
 	return (
 		<Router>
+			<Header />
 			<main>
-				<Header />
 				<Route exact path="/" component={Bio} />
 				<Route exact path="/aboutme" component={Bio} />
 				<Route exact path="/contact" component={Contact} />

@@ -6,9 +6,9 @@ function Header() {
 
 	return (
 		<header>
-			<div class="title-section">
+			<div className="title-section">
 				<h1>John Patrick Eiler</h1>
-				<div class="title-info">
+				<div className="title-info">
 					<h2>
 						<span>Email: </span>jp.eiler97@gmail.com
 					</h2>

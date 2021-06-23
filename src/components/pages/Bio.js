@@ -2,13 +2,13 @@ import React from 'react';
 
 function Bio() {
 	return (
-		<section class="about-section">
+		<section className="about-section">
 			<div id="about-title">What am I about?</div>
-			<section class="about-flex">
-				<section class="about-me">
+			<section className="about-flex">
+				<section className="about-me">
 					{/* <!-- <hr>  --> */}
 					<h2>Coding History</h2>
-					<div class="about-div">
+					<div className="about-div">
 						<ul>
 							<li>Basic Java course in High School</li>
 							<li>Self-taught HTML/CSS (Udemy)</li>
@@ -18,7 +18,7 @@ function Bio() {
 						</ul>
 					</div>
 					<h2>Workplace Strengths</h2>
-					<div class="about-div">
+					<div className="about-div">
 						<ul>
 							<li>I put others first and see the utmost importance in teamwork.</li>
 							<li>I communicate with colleaugues and clients clearly and efficiently.</li>
@@ -29,7 +29,7 @@ function Bio() {
 						</ul>
 					</div>
 					<h2>More about me!</h2>
-					<div class="about-div">
+					<div className="about-div">
 						<p>
 							I share a passion for coding as much as I do cooking and art. I've always appreciated
 							crafting something special, whether it be a fancy dinner, an elaborate drawing, or a catchy
@@ -42,7 +42,7 @@ function Bio() {
 				</section>
 
 				{/* <!-- Self Photo + Description --> */}
-				<section class="my-photo">
+				<section className="my-photo">
 					<img src="./assets/images/profileImg.jpg" alt="Self Picture" />
 					<hr />
 					<h2>
