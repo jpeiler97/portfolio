@@ -8,14 +8,15 @@ import ProjectPage from './components/pages/ProjectPage';
 function App() {
 	return (
 		<Router>
-			<div>
+			<main>
 				<Header />
 				<Route exact path="/" component={Bio} />
 				<Route exact path="/aboutme" component={Bio} />
 				<Route exact path="/contact" component={Contact} />
 				<Route path="/projects" component={ProjectPage} />
+				<div class="clearfix" />
 				<Footer />
-			</div>
+			</main>
 		</Router>
 	);
 }
