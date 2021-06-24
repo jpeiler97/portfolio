@@ -1,10 +1,44 @@
 [
 	{
-		"title": "",
-		"gitLink": "",
-		"projectLink": "",
-		"image": "",
-		"imageAlt": ""
+		"title": "Project: Ron's Food Finder",
+		"gitLink": "https://github.com/klay824/project-1",
+		"projectLink": "https://klay824.github.io/project-1/",
+		"image": "./assets/images/proj1Thumbnail.png",
+		"imageAlt": "Ron's Food Finder"
 	},
-	{}
+	{
+		"title": "Project: Bubbblr",
+		"gitLink": "https://github.com/davidboerm/bubbblr",
+		"projectLink": "https://bubbblr.herokuapp.com/dashboard",
+		"image": "./assets/images/proj2Thumbnail.png",
+		"imageAlt": "Bubbblr"
+	},
+	{
+		"title": "The Fantastic Tech Blog",
+		"gitLink": "https://github.com/jpeiler97/tech-blog",
+		"projectLink": "https://boiling-wildwood-64656.herokuapp.com/",
+		"image": "./assets/images/blogThumbnail.png",
+		"imageAlt": "Tech Blog"
+	},
+	{
+		"title": "Weather Dashboard",
+		"gitLink": "https://github.com/jpeiler97/weather-dashboard",
+		"projectLink": "https://jpeiler97.github.io/weather-dashboard/",
+		"image": "./assets/images/weatherDashThumbnail.png",
+		"imageAlt": "Weather Dashboard"
+	},
+	{
+		"title": "Day Planner",
+		"gitLink": "https://github.com/jpeiler97/day-planner",
+		"projectLink": "https://jpeiler97.github.io/day-planner/",
+		"image": "./assets/images/dayPlannerThumbnail.png",
+		"imageAlt": "Day Planner"
+	},
+	{
+		"title": "Hyper Break",
+		"gitLink": "#",
+		"projectLink": "https://sharemygame.com/@MisterGooms/hyper-break",
+		"image": "./assets/images/blockBreakThumbnail.png",
+		"imageAlt": "Hyper Break"
+	}
 ]

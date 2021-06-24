@@ -1,14 +1,16 @@
 import React, { useState } from 'react';
 import Project from '../Project';
-function ProjectPage({ title, gitLink, projectLink, image, imageAlt }) {
+import projects from '../../projects.json';
+
+function ProjectPage() {
 	const [ projectState, setProjectState ] = useState({
-		projectList: [],
+		projectList: projects,
 		projectIndex: 0,
-		title: '',
-		gitLink: '',
-		projectLink: '',
-		image: '',
-		imageAlt: ''
+		title: projects[0].title,
+		gitLink: projects[0].gitLink,
+		projectLink: projects[0].projectLink,
+		image: projects[0].image,
+		imageAlt: projects[0].imageAlt
 	});
 
 	return (
