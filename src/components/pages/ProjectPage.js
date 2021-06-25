@@ -7,32 +7,39 @@ function ProjectPage() {
 		projectIndex: 0
 	});
 
+	//Changes the index passed into the project component based on if a user clicks next or previous
 	function changeIndex(event) {
 		event.preventDefault();
-		console.log(projects.length);
-		if (state.projectIndex <= projects.length - 1 && state.projectIndex >= 0) {
-			console.log('something');
-			if (event.target.innerText === 'Previous' && state.projectIndex - 1 !== -1) {
-				setProjectState({
-					...state,
-					projectIndex: state.projectIndex - 1
-				});
-			} else if (event.target.innerText === 'Next' && state.projectIndex + 1 !== projects.length) {
-				setProjectState({
-					...state,
-					projectIndex: state.projectIndex + 1
-				});
-			} else if (event.target.innerText === 'Previous' && state.projectIndex - 1 === -1) {
-				setProjectState({
-					...state,
-					projectIndex: 5
-				});
-			} else if (event.target.innerText === 'Next' && state.projectIndex + 1 === projects.length) {
-				setProjectState({
-					...state,
-					projectIndex: 0
-				});
-			}
+
+		//Will decrement the projectIndex as long as the previous index will not equal -1
+		//(otherwise, an error will be thrown because projects[-1] doesn't exist)
+		if (event.target.innerText === 'Previous' && state.projectIndex - 1 !== -1) {
+			setProjectState({
+				...state,
+				projectIndex: state.projectIndex - 1
+			});
+
+			//Will increment the projectIndex as long as the next index will not equal projects.length
+			//(otherwise, an error will be thrown because an index equal to the array length doesn't exist)
+		} else if (event.target.innerText === 'Next' && state.projectIndex + 1 !== projects.length) {
+			setProjectState({
+				...state,
+				projectIndex: state.projectIndex + 1
+			});
+
+			//If the user clicks 'Previous' while on the first project in the array, the last project will be displayed
+		} else if (event.target.innerText === 'Previous' && state.projectIndex - 1 === -1) {
+			setProjectState({
+				...state,
+				projectIndex: projects.length - 1
+			});
+
+			//If the user clicks 'Next' while on the last project in the array, the first project will be displayed
+		} else if (event.target.innerText === 'Next' && state.projectIndex + 1 === projects.length) {
+			setProjectState({
+				...state,
+				projectIndex: 0
+			});
 		}
 	}
 
