@@ -5,6 +5,7 @@ import Header from './components/Header';
 import Bio from './components/pages/Bio';
 import Contact from './components/pages/Contact';
 import ProjectPage from './components/pages/ProjectPage';
+
 function App() {
 	return (
 		<Router>

@@ -46,15 +46,19 @@ function ProjectPage() {
 	return (
 		<section className="app-section" id="app-section">
 			<div id="section-title">What have I made?</div>
-			{state.projectIndex + 1} of 6
-			<button onClick={changeIndex}>Next</button>
-			<button onClick={changeIndex}>Previous</button>
+			<div className="app-controls">
+				{state.projectIndex + 1} of 6
+				<button onClick={changeIndex}>Next</button>
+				<button onClick={changeIndex}>Previous</button>
+			</div>
+
 			<Project
 				title={projects[state.projectIndex].title}
 				gitLink={projects[state.projectIndex].gitLink}
 				projectLink={projects[state.projectIndex].projectLink}
 				image={projects[state.projectIndex].image}
 				imageAlt={projects[state.projectIndex].imageAlt}
+				description={projects[state.projectIndex].description}
 			/>
 		</section>
 	);

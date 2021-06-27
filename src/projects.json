@@ -5,7 +5,7 @@
 		"projectLink": "https://klay824.github.io/project-1/",
 		"image": "./assets/images/proj1Thumbnail.png",
 		"imageAlt": "Ron's Food Finder",
-		"description": ""
+		"description": "This first project is a Ron Swanson themed website that generates a quote from the character and provides the user with info about a local steak or breakfast restaurant. It makes use of several third party APIs as well as the Materialize CSS framework."
 	},
 	{
 		"title": "Project: Bubbblr",
@@ -13,7 +13,7 @@
 		"projectLink": "https://bubbblr.herokuapp.com/dashboard",
 		"image": "./assets/images/proj2Thumbnail.png",
 		"imageAlt": "Bubbblr",
-		"description": ""
+		"description": "This second project is a project management app. It uses Socket.io and Express to allow users to brainstorm for projects in real time, as well as view a pre-organized outline based off of brainstorm 'bubbles' that were sent in chat."
 	},
 	{
 		"title": "The Fantastic Tech Blog",
@@ -21,7 +21,7 @@
 		"projectLink": "https://boiling-wildwood-64656.herokuapp.com/",
 		"image": "./assets/images/blogThumbnail.png",
 		"imageAlt": "Tech Blog",
-		"description": ""
+		"description": "This is a blog that makes use of Express sessions and encryption to allow users to sign in and make blog posts about Tech-related matters. It stores posts using SQL and Sequelize."
 	},
 	{
 		"title": "Weather Dashboard",
