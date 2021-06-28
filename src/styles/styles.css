@@ -92,9 +92,22 @@ header nav {
 	align-items: center;
 	flex: 1 0 auto;
 }
+
+.nav-link {
+	text-decoration: none !important;
+	color: #131414 !important;
+	font-size: 35px !important;
+	font-weight: bolder !important;
+	padding: 5px !important;
+}
+
+.nav-link:hover {
+	text-decoration: underline !important;
+	color: #247474 !important;
+}
 header nav ul {
 	display: flex;
-	padding: 4px;
+	padding: 5px;
 }
 header nav ul a {
 	text-decoration: none;

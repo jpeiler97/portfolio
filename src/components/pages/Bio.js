@@ -43,7 +43,7 @@ function Bio() {
 
 				{/* <!-- Self Photo + Description --> */}
 				<section className="my-photo">
-					<img src="./assets/images/profileImg.jpg" alt="Self Picture" />
+					<img src="./assets/images/profileImg.jpg" alt="Self" />
 					<hr />
 					<h2>
 						Hi, I'm JP Eiler. I'm an aspiring full-stack developer hoping to make some pretty cool code. I

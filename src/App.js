@@ -15,7 +15,7 @@ function App() {
 				<Route exact path="/aboutme" component={Bio} />
 				<Route exact path="/contact" component={Contact} />
 				<Route path="/projects" component={ProjectPage} />
-				<div class="clearfix" />
+				<div className="clearfix" />
 			</main>
 			<Footer />
 		</Router>
