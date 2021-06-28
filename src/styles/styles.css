@@ -229,18 +229,6 @@ main {
 	text-align: center;
 }
 
-.flex-row {
-	display: flex;
-	flex-direction: row;
-	flex-flow: row;
-	flex-wrap: wrap;
-	justify-items: space-around;
-	padding: 25px;
-}
-#first-row {
-	width: 30%;
-}
-
 .app-container {
 	padding: 2%;
 	width: 60vw;
@@ -283,6 +271,7 @@ main {
 	text-align: center;
 	border-radius: 10px;
 	border: 2px #97625e solid;
+	padding: 5px;
 }
 
 .repo {
@@ -293,6 +282,7 @@ main {
 	text-align: center;
 	border-radius: 10px;
 	border: 2px rgb(24, 73, 95) solid;
+	padding: 5px;
 }
 
 .deploy a,
@@ -311,24 +301,6 @@ main {
 	margin-top: auto;
 	margin-bottom: auto;
 	border-radius: 25px;
-}
-
-.example-enter {
-	opacity: 0.01;
-}
-
-.example-enter.example-enter-active {
-	opacity: 1;
-	transition: opacity 500ms ease-in;
-}
-
-.example-leave {
-	opacity: 1;
-}
-
-.example-leave.example-leave-active {
-	opacity: 0.01;
-	transition: opacity 300ms ease-in;
 }
 
 .app-info {
@@ -485,11 +457,12 @@ footer p {
 	}
 }
 @media screen and (max-width: 768px) {
-	#app-tag,
-	#repo-link {
-		font-size: 1rem;
+	.contact-me h1 {
+		font-size: 40px;
 	}
-
+	.nav-link {
+		font-size: 25px !important;
+	}
 	header nav ul a {
 		font-size: 25px;
 	}
@@ -510,6 +483,13 @@ footer p {
 	.about-section {
 		margin-top: 40px;
 	}
+	.my-photo {
+		width: 80%;
+	}
+
+	.my-photo h2 {
+		font-size: 17px;
+	}
 
 	.app-info {
 		flex-direction: column-reverse;
@@ -521,6 +501,11 @@ footer p {
 }
 
 @media screen and (max-width: 576px) {
+	.about-section,
+	.app-section,
+	.contact-section {
+		margin-bottom: 80px;
+	}
 	header {
 		flex-direction: column;
 	}
@@ -529,33 +514,60 @@ footer p {
 		justify-content: space-evenly;
 	}
 
+	.nav-link {
+		font-size: 15px !important;
+	}
 	header nav ul a {
-		font-size: 20px;
+		font-size: 15px;
 	}
 
 	.title-section h1 {
 		font-size: 30px;
 	}
+
+	.app-title {
+		font-size: 20px;
+	}
+	.description {
+		font-size: 15px;
+	}
+	.deploy,
+	.repo {
+		width: 150px;
+	}
+	.about-section {
+		margin-left: 10px;
+		margin-right: 10px;
+		width: 95%;
+	}
+
+	.about-div ul li,
+	.about-div p {
+		font-size: 17px;
+	}
 	.my-photo {
-		width: 70%;
+		width: 80%;
+	}
+
+	.my-photo h2 {
+		font-size: 17px;
 	}
 
 	.contact-row {
 		width: 75%;
 	}
 
-	#first-row {
-		width: 50%;
-	}
-
-	#other {
-		margin: 2%;
-	}
-	#app-tag {
-		font-size: 0.8rem;
-	}
-
 	.contact-me h1 {
-		font-size: 30px;
+		font-size: 25px;
+	}
+	footer {
+		height: 70px;
+	}
+
+	.link-div h3 a {
+		font-size: 20px;
+	}
+	.link-div img {
+		height: 50px;
 	}
 }
