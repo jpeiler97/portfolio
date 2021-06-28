@@ -4,7 +4,8 @@
 For this assignment I was asked to create a responsive web portfolio from scratch. It features my favorite projects and a section about my skills and interests.
 
 ## Technologies Used
-- HTML/CSS 
+- HTML/CSS
+- React.js
 
 ## Links and Screenshots
 
