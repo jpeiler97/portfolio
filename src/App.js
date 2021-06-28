@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { HashRouter as Router, Route } from 'react-router-dom';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Bio from './components/pages/Bio';
@@ -8,7 +8,7 @@ import ProjectPage from './components/pages/ProjectPage';
 
 function App() {
 	return (
-		<Router>
+		<Router basename="/portfolio-hw" hashType="noslash">
 			<Header />
 			<main>
 				<Route exact path="/" component={Bio} />
