@@ -8,17 +8,19 @@ import ProjectPage from './components/pages/ProjectPage';
 
 function App() {
 	return (
-		<Router basename="/portfolio-hw" hashType="noslash">
-			<Header />
-			<main>
-				<Route exact path="/" component={Bio} />
-				<Route exact path="/aboutme" component={Bio} />
-				<Route exact path="/contact" component={Contact} />
-				<Route path="/projects" component={ProjectPage} />
-				<div className="clearfix" />
-			</main>
-			<Footer />
-		</Router>
+		<div>
+			<Router>
+				<Header />
+				<main>
+					<Route exact path="/" component={Bio} />
+					<Route exact path="/aboutme" component={Bio} />
+					<Route exact path="/contact" component={Contact} />
+					<Route path="/projects" component={ProjectPage} />
+					<div className="clearfix" />
+				</main>
+				<Footer />
+			</Router>
+		</div>
 	);
 }
 
