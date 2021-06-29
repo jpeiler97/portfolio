@@ -14,7 +14,7 @@ function Bio() {
 							<li>Self-taught HTML/CSS (Udemy)</li>
 							<li>Self-taught C# for use with Unity (Udemy)</li>
 							<li>Self-taught Javascript (Udemy)</li>
-							<li>Currently enrolled in full-stack development bootcamp (SMU)</li>
+							<li>Full-stack web development certificate from SMU Bootcamps</li>
 						</ul>
 					</div>
 					<h2>Workplace Strengths</h2>
