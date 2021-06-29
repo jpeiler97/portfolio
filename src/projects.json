@@ -42,7 +42,7 @@
 	{
 		"title": "User Directory",
 		"gitLink": "https://github.com/jpeiler97/user-directory",
-		"projectLink": "https://sharemygame.com/@MisterGooms/hyper-break",
+		"projectLink": "https://jpeiler97.github.io/user-directory/",
 		"image": "./assets/images/userDirThumbnail.png",
 		"imageAlt": "User Directory",
 		"description": "My first React app uses React components and state along with the RandomUser API to generate a table of user info, which can be sorted by category or filtered by name."
