@@ -16,12 +16,12 @@
 		"description": "This second project is a project management app. It uses Socket.io and Express to allow users to brainstorm for projects in real time, as well as view a pre-organized outline based off of brainstorm 'bubbles' that were sent in chat."
 	},
 	{
-		"title": "The Fantastic Tech Blog",
-		"gitLink": "https://github.com/jpeiler97/tech-blog",
-		"projectLink": "https://boiling-wildwood-64656.herokuapp.com/",
-		"image": "./assets/images/blogThumbnail.png",
-		"imageAlt": "Tech Blog",
-		"description": "This is a blog that makes use of Express sessions and encryption to allow users to sign in and make blog posts about Tech-related matters. It stores posts using SQL and Sequelize."
+		"title": "Project: The DIY Solution",
+		"gitLink": "https://github.com/Alexva397/the-diy-solution",
+		"projectLink": "https://warm-caverns-74106.herokuapp.com/",
+		"image": "./assets/images/diyThumbnail.png",
+		"imageAlt": "The DIY Solution",
+		"description": "This is a management app that allows users to easily organize the finances for their next DIY project. It's a MERN app that uses Material UI for styling and the Passport API for authentication."
 	},
 	{
 		"title": "Weather Dashboard",

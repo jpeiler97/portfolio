@@ -25,12 +25,12 @@ function Header() {
 					</Link>
 				</ul>
 				<ul>
-					<Link to="/projects" className={location.pathname === '/projects' ? 'nav-link active' : 'nav-link'}>
+					<Link to="/projects" className={location.pathname === '/projects'}>
 						Projects
 					</Link>
 				</ul>
 				<ul>
-					<Link to="/contact" className={location.pathname === '/contact' ? 'nav-link active' : 'nav-link'}>
+					<Link to="/contact" className={location.pathname === '/contact'}>
 						Contact
 					</Link>
 				</ul>
