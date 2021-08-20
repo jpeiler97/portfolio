@@ -1,7 +1,4 @@
-# Portfolio CSS Homework
-
-## Assignment
-For this assignment I was asked to create a responsive web portfolio from scratch. It features my favorite projects and a section about my skills and interests.
+# Portfolio
 
 ## Technologies Used
 - HTML/CSS
