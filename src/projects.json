@@ -1,50 +1,57 @@
 [
-	{
-		"title": "Project: Ron's Food Finder",
-		"gitLink": "https://github.com/klay824/project-1",
-		"projectLink": "https://klay824.github.io/project-1/",
-		"image": "./assets/images/proj1Thumbnail.png",
-		"imageAlt": "Ron's Food Finder",
-		"description": "This first project is a Ron Swanson themed website that generates a quote from the character and provides the user with info about a local steak or breakfast restaurant. It makes use of several third party APIs as well as the Materialize CSS framework."
-	},
-	{
-		"title": "Project: Bubbblr",
-		"gitLink": "https://github.com/davidboerm/bubbblr",
-		"projectLink": "https://bubbblr.herokuapp.com/dashboard",
-		"image": "./assets/images/proj2Thumbnail.png",
-		"imageAlt": "Bubbblr",
-		"description": "This second project is a project management app. It uses Socket.io and Express to allow users to brainstorm for projects in real time, as well as view a pre-organized outline based off of brainstorm 'bubbles' that were sent in chat."
-	},
-	{
-		"title": "Project: The DIY Solution",
-		"gitLink": "https://github.com/Alexva397/the-diy-solution",
-		"projectLink": "https://warm-caverns-74106.herokuapp.com/",
-		"image": "./assets/images/diyThumbnail.png",
-		"imageAlt": "The DIY Solution",
-		"description": "This is a management app that allows users to easily organize the finances for their next DIY project. It's a MERN app that uses Material UI for styling and the Passport API for authentication."
-	},
-	{
-		"title": "Weather Dashboard",
-		"gitLink": "https://github.com/jpeiler97/weather-dashboard",
-		"projectLink": "https://jpeiler97.github.io/weather-dashboard/",
-		"image": "./assets/images/weatherDashThumbnail.png",
-		"imageAlt": "Weather Dashboard",
-		"description": "This is a dashboard that makes use of the OpenWeather API to allow users to get info about the weather in a given area (both daily and 5-day forecast)."
-	},
-	{
-		"title": "Day Planner",
-		"gitLink": "https://github.com/jpeiler97/day-planner",
-		"projectLink": "https://jpeiler97.github.io/day-planner/",
-		"image": "./assets/images/dayPlannerThumbnail.png",
-		"imageAlt": "Day Planner",
-		"description": "This is an app that allows users to plan out their schedule for a standard 9-5 workday. It uses moment.js to track the current time and color-code each hour based on if it has passed or not."
-	},
-	{
-		"title": "User Directory",
-		"gitLink": "https://github.com/jpeiler97/user-directory",
-		"projectLink": "https://jpeiler97.github.io/user-directory/",
-		"image": "./assets/images/userDirThumbnail.png",
-		"imageAlt": "User Directory",
-		"description": "My first React app uses React components and state along with the RandomUser API to generate a table of user info, which can be sorted by category or filtered by name."
-	}
+  {
+    "title": "Love Big",
+    "projectLink": "http://lovebigdevclient01.com.temporary-domain.com/",
+    "image": "./assets/images/loveBigThumbnail.png",
+    "imageAlt": "Love Big",
+    "description": "I am currently building the front end for a website that allows organizations to manage their humanitarian projects and partners. The front end is built using React.js and Material UI components with a custom theme. We are also making use of the Jira board for the project's management."
+  },
+  {
+    "title": "Project: Ron's Food Finder",
+    "gitLink": "https://github.com/klay824/project-1",
+    "projectLink": "https://klay824.github.io/project-1/",
+    "image": "./assets/images/proj1Thumbnail.png",
+    "imageAlt": "Ron's Food Finder",
+    "description": "This first project is a Ron Swanson themed website that generates a quote from the character and provides the user with info about a local steak or breakfast restaurant. It makes use of several third party APIs as well as the Materialize CSS framework."
+  },
+  {
+    "title": "Project: Bubbblr",
+    "gitLink": "https://github.com/davidboerm/bubbblr",
+    "projectLink": "https://bubbblr.herokuapp.com/dashboard",
+    "image": "./assets/images/proj2Thumbnail.png",
+    "imageAlt": "Bubbblr",
+    "description": "This second project is a project management app. It uses Socket.io and Express to allow users to brainstorm for projects in real time, as well as view a pre-organized outline based off of brainstorm 'bubbles' that were sent in chat."
+  },
+  {
+    "title": "Project: The DIY Solution",
+    "gitLink": "https://github.com/Alexva397/the-diy-solution",
+    "projectLink": "https://warm-caverns-74106.herokuapp.com/",
+    "image": "./assets/images/diyThumbnail.png",
+    "imageAlt": "The DIY Solution",
+    "description": "This is a management app that allows users to easily organize the finances for their next DIY project. It's a MERN app that uses Material UI for styling and the Passport API for authentication."
+  },
+  {
+    "title": "Weather Dashboard",
+    "gitLink": "https://github.com/jpeiler97/weather-dashboard",
+    "projectLink": "https://jpeiler97.github.io/weather-dashboard/",
+    "image": "./assets/images/weatherDashThumbnail.png",
+    "imageAlt": "Weather Dashboard",
+    "description": "This is a dashboard that makes use of the OpenWeather API to allow users to get info about the weather in a given area (both daily and 5-day forecast)."
+  },
+  {
+    "title": "Day Planner",
+    "gitLink": "https://github.com/jpeiler97/day-planner",
+    "projectLink": "https://jpeiler97.github.io/day-planner/",
+    "image": "./assets/images/dayPlannerThumbnail.png",
+    "imageAlt": "Day Planner",
+    "description": "This is an app that allows users to plan out their schedule for a standard 9-5 workday. It uses moment.js to track the current time and color-code each hour based on if it has passed or not."
+  },
+  {
+    "title": "User Directory",
+    "gitLink": "https://github.com/jpeiler97/user-directory",
+    "projectLink": "https://jpeiler97.github.io/user-directory/",
+    "image": "./assets/images/userDirThumbnail.png",
+    "imageAlt": "User Directory",
+    "description": "My first React app uses React components and state along with the RandomUser API to generate a table of user info, which can be sorted by category or filtered by name."
+  }
 ]
